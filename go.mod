@@ -1,4 +1,4 @@
-module github.com/42wim/caddy-gitea
+module github.com/ascendise/caddy-gitea
 
 go 1.19
 
