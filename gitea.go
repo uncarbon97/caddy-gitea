@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/42wim/caddy-gitea/pkg/gitea"
+	"github.com/uncarbon97/caddy-gitea/pkg/gitea"
 	"github.com/caddyserver/caddy/v2"
 	"github.com/caddyserver/caddy/v2/caddyconfig/caddyfile"
 	"github.com/caddyserver/caddy/v2/caddyconfig/httpcaddyfile"
