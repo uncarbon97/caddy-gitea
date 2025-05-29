@@ -116,5 +116,5 @@ To build with this plugin you'll need to have go1.19 installed.
 
 ```go
 go install github.com/caddyserver/xcaddy/cmd/xcaddy@latest #this will install xcaddy in ~/go/bin
-~/go/bin/xcaddy build --with github.com/uncarbon97/caddy-gitea@set-mime-type
+~/go/bin/xcaddy build --with github.com/uncarbon97/caddy-gitea@[TAG]
 ```
