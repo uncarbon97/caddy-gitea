@@ -108,7 +108,7 @@ func (m Middleware) ServeHTTP(w http.ResponseWriter, r *http.Request, _ caddyhtt
 	return err
 }
 
-// Sets the Content-Type for js, css and html so browsers actually load the stuff
+// Sets the Content-Type for js, css,  html and so on that browsers actually load the stuff
 func SetContentType(w http.ResponseWriter, filePath string) {
 	if strings.HasSuffix(filePath, ".css") {
 		w.Header().Set("Content-Type", "text/css")
@@ -116,7 +116,9 @@ func SetContentType(w http.ResponseWriter, filePath string) {
 		w.Header().Set("Content-Type", "application/javascript")
 	} else if strings.HasSuffix(filePath, ".html") {
 		w.Header().Set("Content-Type", "text/html")
-	}
+	} else if strings.HasSuffix(filePath, ".svg") {
+        w.Header().Set("Content-Type", "image/svg+xml")
+    }
 }
 
 // Interface guards
